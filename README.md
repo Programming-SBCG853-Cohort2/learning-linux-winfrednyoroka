@@ -60,6 +60,20 @@ man | cd
 __NB__ you can only remove a directory when you are outside the directory
 e.g **rmdir** inner_git
 
+
+
+# Create empty files
+**touch** this command can be used in creating empty files
+
+e.g touch learn_git.txt
+
+
+# Moving files
+**mv** -this command helps in moving files between directories. however, it does not make a copy of the file. 
+
+In moving files then you must specify the file and the directory you want to move to
+
+
 ## Copying files (cp)
 
 cp _ it involves copying files into directories. the advantage is that you always retain a copy of your original file
