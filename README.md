@@ -37,9 +37,9 @@ cd ../.. _it takes you two levels up from where you are currently
 **mkdir** _ this command enables one to create a directory
 for instance: mkdir learning_unix
 # NB: when naming directories in terminal avoid use of spaces, since terminal uses spaces when giving commands. instead make use of underscores
-
+mkdir unixstuff
 mkdir -p outer_git/inner_git
-The above command line helps you create two directories at the same time where the second directory is hosted within the first directory
+The above command line helps you create two directories at the same time where the second directory is hosted within the first directory and where any of the directories does not exist. it thus creates directories as needed.
 # look for help
 mkdir --help
 
