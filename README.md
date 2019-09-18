@@ -60,6 +60,8 @@ man | cd
 __NB__ you can only remove a directory when you are outside the directory
 e.g **rmdir** inner_git
 
+# use of tab
+click _tab_ once its used for autocompletion of file and directory names
 
 
 # Create empty files
@@ -73,6 +75,15 @@ e.g touch learn_git.txt
 
 In moving files then you must specify the file and the directory you want to move to
 
+e.g mv notes.txt unixstuff/
+ mv *.txt unixstuff/
+ 
+ # NB: *  THIS IS A WILD CART, IT MEANS EVERYTHING FOR INSTANCE EVERYTHING WITH .TXT
+ 
+ # Moving directories
+ mv test1 test2
+ 
+ in the above case test 1 and test 2 are directories. we are moving test 1 to test 2
 
 ## Copying files (cp)
 
@@ -81,3 +92,10 @@ cp _ it involves copying files into directories. the advantage is that you alway
 cp 'input the file name' "preferred directory"
 ## NB: Input file may include the path showing where your directory is located
 for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
+
+# Renaming a file
+ **mv**- can be used in renaming files for instance:
+ 
+ mv inner.txt unixstuff/outer.txt (inner.txt is my old file name while oute.txt is my new file name; unixstuff is thelocation i am moving to and have it in a different name)
+ 
+ 
