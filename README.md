@@ -43,7 +43,7 @@ __man__ helps the operator access the manual pages for each unix command
 e.g
 
 man   | command
-------- 
+------- | ------
 man | mkdir
 man  | ls
 man | grep
