@@ -38,7 +38,14 @@ The above command line helps you create two directories at the same time where t
 # look for help
 mkdir --help
 # looking for manuals for the command lines
-man mkdir
+
+__man__ helps the operator access the manual pages for each unix command 
+e.g
+man | mkdir
+man  | ls
+man | grep
+man | cp
+man | cd
 
 
 ## Copying files (cp)
