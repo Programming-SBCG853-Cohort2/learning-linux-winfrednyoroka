@@ -56,9 +56,16 @@ man | grep
 man | cp
 man | cd
 
-# Removing directories
+# Removing directories and files
+
+Remove **rm** is a very dangerous command you have to use it carefully once deleted you will never recover yourfiles or directories
+
 __NB__ you can only remove a directory when you are outside the directory
 e.g **rmdir** inner_git
+
+rmdir index* , remove all files starting with index
+
+rm -i index* -when you use the option **-i** it asks you whether you really sure you want to delete the file or directory
 
 # use of tab
 click _tab_ once its used for autocompletion of file and directory names
@@ -76,6 +83,7 @@ e.g touch learn_git.txt
 In moving files then you must specify the file and the directory you want to move to
 
 e.g mv notes.txt unixstuff/
+ 
  mv *.txt unixstuff/
  
  # NB: *  THIS IS A WILD CART, IT MEANS EVERYTHING FOR INSTANCE EVERYTHING WITH .TXT
