@@ -143,4 +143,12 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
    **wc** readme.md
    **wc -l** readme.md
   
+ # Editing small text files
+ 
+ we make use of the **nano**
+ 
+ **nano** unixstuff.txt
+ 
+ down the terminal it provides the operator with options which we type in using Ctrl + X to mean exit
+ 
  
