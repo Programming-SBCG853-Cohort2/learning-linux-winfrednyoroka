@@ -171,5 +171,16 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  curl is used in dowloading contents from the url
  curl hhttps//google.com
+ 
  **cut** -f 5 student.csv
- **cut** -f 5-7 student.csv > stdent_results
+
+**cut** -f 5-7 student.csv > stdent_results
+
+# Combining unix commands
+we make use of pipe **|**
+
+grep was unixstuff.txt **|** wc-l
+
+grep was unixstuff.txt **|** sort | less
+
+grep was unixstuff.txt **|** sort | less | unique
