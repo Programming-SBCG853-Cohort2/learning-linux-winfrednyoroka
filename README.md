@@ -105,5 +105,34 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  **mv**- can be used in renaming files for instance:
  
  mv inner.txt unixstuff/outer.txt (inner.txt is my old file name while oute.txt is my new file name; unixstuff is thelocation i am moving to and have it in a different name)
- 
+  
+  # Viewing files
+  1\. using the command **less**
+  use the command **less** to view the contant of a file per page. this command allows you to view the file but you can never edit the file content
+  **Echo** this command prints the statement on the screen
+  
+  e.g **echo** winfred is my name; it prints this statement on the terminal.
+  however, ECHO can be used to redirect the statement into a file and we can use less command to view the file
+  
+  e.g **echo** "winfred is my name" > unixstuff.txt
+  
+  **less** unixstuff.txt
+  
+  **echo** "introduction to programming" >> unixstuff.txt
+  when we make use of  **>>** we append the statement to the previous unlike when we use **>** which leads to overwriting the file.
+  2\. using **cat**
+  when we use **cat** command it displays all contents of the file of which the operator has no control of until it brings you another prompt.
+   it can be used to combine multiple files and as well can be used to make a copy of the file
+   
+   # Combining files
+   
+   cat mal.fasta typ.fasta >combined.fasta
+   cat *.fastq> combined.fastq
+   
+   # Making copies
+   
+   cat mal.fasta >mal2.fasta
+   
+  
+  
  
