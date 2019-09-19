@@ -184,3 +184,11 @@ grep was unixstuff.txt **|** wc-l
 grep was unixstuff.txt **|** sort | less
 
 grep was unixstuff.txt **|** sort | less | unique
+
+# Power commands
+
+we can combine commands all together
+
+cut -f 7 unixstuff.txt |sort -u
+head -2o unistuff.txt |tail|sort-u
+
