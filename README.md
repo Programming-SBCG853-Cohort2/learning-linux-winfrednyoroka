@@ -161,4 +161,15 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  it displays the variables in the environmnt that  are directories containing the programs we run like the ls command in the bin
  
+ #Matching lines in a text using **grep**
  
+ **grep** it matches a line or whole words and prints them out highlightened
+ 
+ 
+ 
+ #Working with columns
+ 
+ curl is used in dowloading contents from the url
+ curl hhttps//google.com
+ **cut** -f 5 student.csv
+ **cut** -f 5-7 student.csv > stdent_results
