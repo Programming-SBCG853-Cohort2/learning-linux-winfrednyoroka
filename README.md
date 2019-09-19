@@ -151,4 +151,14 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  down the terminal it provides the operator with options which we type in using Ctrl + X to mean exit
  
+ $PATH envirnment variable
+ **echo** can to be used in displaying environment variables
+ e.g
+ 
+ **echo** $USER 
+ 
+ **echo** $PATH
+ 
+ it displays the variables in the environmnt that  are directories containing the programs we run like the ls command in the bin
+ 
  
