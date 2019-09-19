@@ -133,6 +133,14 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
    
    cat mal.fasta >mal2.fasta
    
+  # Counting lines, words and characters in files
   
+  we can use **ls -l** which gives us the number of lines and the size of the file in bytes
+  
+  instead we can use **wc** which gives us the lines, words and characters
+  **wc** can take options for instance **wc -l** which give us the number of lines in the file
+   
+   **wc** readme.md
+   **wc -l** readme.md
   
  
