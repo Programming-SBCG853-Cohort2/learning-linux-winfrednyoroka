@@ -219,15 +219,15 @@ command |function
 ------- |--------
 pwd |print working directory
 cd |change directory
-ls|list
-cp |copy
+ls|list directory contents
+cp |copy files and directories
 touch |make empty files
 mkdir|make directory
 rm(dir)|remove files and or directories
 mv|move files
 grep |search
 wget| web download
-curl |download link
+curl |download url
 cut |  extract columns from files 
 echo |listing environment variables,redirecting statements to a file 
 cat| concatenate-view a short file content,combining files
