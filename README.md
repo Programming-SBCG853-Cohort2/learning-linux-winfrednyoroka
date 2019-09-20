@@ -13,10 +13,11 @@ Basic Command lines to navigate the terminal
 **ls** _it means you are listing the items either they could be directories or subdirectopries or they could be files in your directory either the current directory or another directory away from where you are.
 
 list can take up options
-> ls -l
-> ls-a
-> ls -alh
-> ls -R
+
+> ls -l,
+> ls-a,
+> ls -alh,
+> ls -R.
 ## Changing the directory (cd)
 
 **cd** _it involves changing your directory 
@@ -30,17 +31,23 @@ cd . _it refers to your current directory
 
 cd .. _it takes you to one directory back, actually the parent directory of where you are except when in the root directory
 
-
 cd ../.. _it takes you two levels up from where you are currently
 
 ## Making a directory (mkdir)
+
 **mkdir** _ this command enables one to create a directory
 for instance: mkdir learning_unix
+
 ## NB: when naming directories in terminal avoid use of spaces, since terminal uses spaces when giving commands. instead make use of underscores
+
 mkdir unixstuff
+
 mkdir -p outer_git/inner_git
+
 The above command line helps you create two directories at the same time where the second directory is hosted within the first directory and where any of the directories does not exist. it thus creates directories as needed.
+
 ## look for help
+
 mkdir --help
 
 ## Looking for manuals for the command lines
