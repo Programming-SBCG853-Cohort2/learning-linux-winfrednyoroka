@@ -36,14 +36,14 @@ cd ../.. _it takes you two levels up from where you are currently
 ## Making a directory (mkdir)
 **mkdir** _ this command enables one to create a directory
 for instance: mkdir learning_unix
-# NB: when naming directories in terminal avoid use of spaces, since terminal uses spaces when giving commands. instead make use of underscores
+## NB: when naming directories in terminal avoid use of spaces, since terminal uses spaces when giving commands. instead make use of underscores
 mkdir unixstuff
 mkdir -p outer_git/inner_git
 The above command line helps you create two directories at the same time where the second directory is hosted within the first directory and where any of the directories does not exist. it thus creates directories as needed.
-# look for help
+## look for help
 mkdir --help
 
-# Looking for manuals for the command lines
+## Looking for manuals for the command lines
 
 __man__ helps the operator access the manual pages for each unix command 
 e.g
@@ -56,7 +56,7 @@ man | grep
 man | cp
 man | cd
 
-# Removing directories and files
+## Removing directories and files
 
 Remove **rm** is a very dangerous command you have to use it carefully once deleted you will never recover yourfiles or directories
 
@@ -67,17 +67,17 @@ rmdir index* , remove all files starting with index
 
 rm -i index* -when you use the option **-i** it asks you whether you really sure you want to delete the file or directory
 
-# use of tab
+## use of tab
 click _tab_ once its used for autocompletion of file and directory names
 
 
-# Create empty files
+## Create empty files
 **touch** this command can be used in creating empty files
 
 e.g touch learn_git.txt
 
 
-# Moving files
+## Moving files
 **mv** -this command helps in moving files between directories. however, it does not make a copy of the file. 
 
 In moving files then you must specify the file and the directory you want to move to
@@ -86,9 +86,9 @@ e.g mv notes.txt unixstuff/
  
  mv *.txt unixstuff/
  
- # NB: *  THIS IS A WILD CART, IT MEANS EVERYTHING FOR INSTANCE EVERYTHING WITH .TXT
+ ## NB: *  THIS IS A WILD CART, IT MEANS EVERYTHING FOR INSTANCE EVERYTHING WITH .TXT
  
- # Moving directories
+ ## Moving directories
  mv test1 test2
  
  in the above case test 1 and test 2 are directories. we are moving test 1 to test 2
@@ -101,12 +101,12 @@ cp 'input the file name' "preferred directory"
 ## NB: Input file may include the path showing where your directory is located
 for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
 
-# Renaming a file
+## Renaming a file
  **mv**- can be used in renaming files for instance:
  
  mv inner.txt unixstuff/outer.txt (inner.txt is my old file name while oute.txt is my new file name; unixstuff is thelocation i am moving to and have it in a different name)
   
-  # Viewing files
+  ## Viewing files
   1\. using the command **less**
   use the command **less** to view the contant of a file per page. this command allows you to view the file but you can never edit the file content
   **Echo** this command prints the statement on the screen
@@ -124,16 +124,16 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
   when we use **cat** command it displays all contents of the file of which the operator has no control of until it brings you another prompt.
    it can be used to combine multiple files and as well can be used to make a copy of the file
    
-   # Combining files
+   ## Combining files
    
    cat mal.fasta typ.fasta >combined.fasta
    cat *.fastq> combined.fastq
    
-   # Making copies
+   ## Making copies
    
    cat mal.fasta >mal2.fasta
    
-  # Counting lines, words and characters in files
+  ## Counting lines, words and characters in files
   
   we can use **ls -l** which gives us the number of lines and the size of the file in bytes
   
@@ -143,7 +143,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
    **wc** readme.md
    **wc -l** readme.md
   
- # Editing small text files
+ ## Editing small text files
  
  we make use of the **nano**
  
@@ -151,7 +151,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  down the terminal it provides the operator with options which we type in using Ctrl + X to mean exit
  
- $PATH envirnment variable
+ $ PATH envirnment variable
  **echo** can to be used in displaying environment variables
  e.g
  
@@ -161,13 +161,13 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  it displays the variables in the environmnt that  are directories containing the programs we run like the ls command in the bin
  
- #Matching lines in a text using **grep**
+ ## Matching lines in a text using **grep**
  
  **grep** it matches a line or whole words and prints them out highlightened
  
  
  
- #Working with columns
+ ## Working with columns
  
  curl is used in dowloading contents from the url
  curl hhttps//google.com
@@ -176,7 +176,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
 
 **cut** -f 5-7 student.csv > stdent_results
 
-# Combining unix commands
+## Combining unix commands
 we make use of pipe **|**
 
 grep was unixstuff.txt **|** wc-l
@@ -185,10 +185,36 @@ grep was unixstuff.txt **|** sort | less
 
 grep was unixstuff.txt **|** sort | less | unique
 
-# Power commands
+## Power commands
 
 we can combine commands all together
 
 cut -f 7 unixstuff.txt |sort -u
-head -2o unistuff.txt |tail|sort-u
+
+head -20 unistuff.txt |tail|sort-u
+
+
+Summarry
+
+command |function
+------- |--------
+pwd |print working directory
+cd |change directory
+ls|list
+cp |copy
+touch |make empty files
+mkdir|make directory
+rm|remove
+mv|move
+grep |search
+wget| web download
+curl |download link
+cut |  extract columns from files 
+echo |listing environment variables
+cat| concatenate-view a short file content
+less|view file content that fits the screen
+head| shows the first 10 lines of the file
+tail|shows the last 10 lines of the file
+wc| word,line and or character count
+
 
