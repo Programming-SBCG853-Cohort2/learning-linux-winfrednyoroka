@@ -206,7 +206,7 @@ cut -f 7 unixstuff.txt |sort -u
 head -20 unistuff.txt |tail|sort-u
 
 
-Summarry
+ # Summary
 
 command |function
 ------- |--------
@@ -217,18 +217,17 @@ cp |copy
 touch |make empty files
 mkdir|make directory
 rm(dir)|remove files and or directories
-mv|move
+mv|move files
 grep |search
 wget| web download
 curl |download link
 cut |  extract columns from files 
 echo |listing environment variables,redirecting statements to a file 
-cat| concatenate-view a short file content
+cat| concatenate-view a short file content,combining files
 less|view file content that fits the screen
 head| shows the first 10 lines of the file
 tail|shows the last 10 lines of the file
 wc| word,line and or character count
-cat |combining files
 nano|text editor
 
 
