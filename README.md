@@ -68,6 +68,7 @@ rmdir index* , remove all files starting with index
 rm -i index* -when you use the option **-i** it asks you whether you really sure you want to delete the file or directory
 
 ## use of tab
+
 click _tab_ once its used for autocompletion of file and directory names
 
 
@@ -78,6 +79,7 @@ e.g touch learn_git.txt
 
 
 ## Moving files
+
 **mv** -this command helps in moving files between directories. however, it does not make a copy of the file. 
 
 In moving files then you must specify the file and the directory you want to move to
@@ -89,6 +91,7 @@ e.g mv notes.txt unixstuff/
  ## NB: *  THIS IS A WILD CART, IT MEANS EVERYTHING FOR INSTANCE EVERYTHING WITH .TXT
  
  ## Moving directories
+ 
  mv test1 test2
  
  in the above case test 1 and test 2 are directories. we are moving test 1 to test 2
@@ -98,10 +101,12 @@ e.g mv notes.txt unixstuff/
 cp _ it involves copying files into directories. the advantage is that you always retain a copy of your original file
 
 cp 'input the file name' "preferred directory"
+
 ## NB: Input file may include the path showing where your directory is located
 for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
 
 ## Renaming a file
+ 
  **mv**- can be used in renaming files for instance:
  
  mv inner.txt unixstuff/outer.txt (inner.txt is my old file name while oute.txt is my new file name; unixstuff is thelocation i am moving to and have it in a different name)
@@ -109,6 +114,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
   ## Viewing files
   1\. using the command **less**
   use the command **less** to view the contant of a file per page. this command allows you to view the file but you can never edit the file content
+  
   **Echo** this command prints the statement on the screen
   
   e.g **echo** winfred is my name; it prints this statement on the terminal.
@@ -120,6 +126,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
   
   **echo** "introduction to programming" >> unixstuff.txt
   when we make use of  **>>** we append the statement to the previous unlike when we use **>** which leads to overwriting the file.
+  
   2\. using **cat**
   when we use **cat** command it displays all contents of the file of which the operator has no control of until it brings you another prompt.
    it can be used to combine multiple files and as well can be used to make a copy of the file
@@ -127,6 +134,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
    ## Combining files
    
    cat mal.fasta typ.fasta >combined.fasta
+  
    cat *.fastq> combined.fastq
    
    ## Making copies
@@ -151,7 +159,7 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  down the terminal it provides the operator with options which we type in using Ctrl + X to mean exit
  
- $ PATH envirnment variable
+ $ PATH environment variable
  **echo** can to be used in displaying environment variables
  e.g
  
@@ -165,18 +173,22 @@ for instance : cp '~/Documents/NGS/COURSE_DATA/UNIX COURSE/MALARIA.FASTA' "."
  
  **grep** it matches a line or whole words and prints them out highlightened
  
+ **grep** was unixstuff.txt
+ 
  
  
  ## Working with columns
  
  curl is used in dowloading contents from the url
- curl hhttps//google.com
+ 
+ curl https//google.com
  
  **cut** -f 5 student.csv
 
-**cut** -f 5-7 student.csv > stdent_results
+ **cut** -f 5-7 student.csv > stdent_results
 
 ## Combining unix commands
+
 we make use of pipe **|**
 
 grep was unixstuff.txt **|** wc-l
@@ -204,17 +216,19 @@ ls|list
 cp |copy
 touch |make empty files
 mkdir|make directory
-rm|remove
+rm(dir)|remove files and or directories
 mv|move
 grep |search
 wget| web download
 curl |download link
 cut |  extract columns from files 
-echo |listing environment variables
+echo |listing environment variables,redirecting statements to a file 
 cat| concatenate-view a short file content
 less|view file content that fits the screen
 head| shows the first 10 lines of the file
 tail|shows the last 10 lines of the file
 wc| word,line and or character count
+cat |combining files
+nano|text editor
 
 
